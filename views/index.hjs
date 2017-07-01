@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rajaraman Personal Blog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo|Bowlby+One|Pacifico|Josefin+Sans|Fredericka+the+Great|Acme" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="nav navbar-brand topnav" href="#"><span><img src="/images/brand.jpg"/></span>Rajaraman's</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="intro-header">
+    <div class="container">
+      <div class="row vertical-center">
+        <div class="col-lg-12">
+          <div class="intro-message">
+            <h1>{{ title }}</h1>
+            <hr class="intro-divider">
+            <h2>I'm a Software Developer!</h2>
+            <ul class="list-inline abtbtn">
+              <li>
+                <a href="#about" class="btn btn-default btn-md topmen">KNOW ME</a>
+              </li>
+              <!-- <li>
+                <a href="#projects" class="btn btn-default btn-lg topmen">Projects</a>
+              </li>
+              <li>
+                <a href="#contacts" class="btn btn-default btn-lg topmen">Contact</a>
+              </li> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a name="about"></a>
+    <div class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <p>RAJA RAMAN</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <a name="contacts"></a>
+    <div class="contacts-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+                    <h2>Connect with me!</h2>
+                    <p>Feel free to connect with me over phone, e-mail or social network</p>
+                    <div class ="contact-pane">
+                        <a href="tel:682-307-1343">682-307-1343</a><br /><a href="mailto:g.rajaraman0391@gmail.com">g.rajaraman0391@gmail</a>
+                        </div>
+            <ul class="list-inline intro-social-buttons cont-space">
+
+              <li>
+                <a href="https://twitter.com/rajaramangovind" class="btn btn-default btn-sm" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+              </li>
+
+              <!--<li>
+              <a href="https://github.com/rajaramangovindasamy/" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+            </li>-->
+            <li>
+              <a href="https://www.linkedin.com/in/rajaramang/" class="btn btn-default btn-sm" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/+RajaramanGovindasamy" class="btn btn-default btn-sm" target="_blank"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+            </li>
+          </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
