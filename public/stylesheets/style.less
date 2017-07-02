@@ -1,6 +1,5 @@
 body{
-  padding:50px;
-  font:14px "Lato";
+    font:14px "Lato";
   }
 a
 {
@@ -77,8 +76,6 @@ blockquote {
     margin-top: 40px;
     padding-top: 100px;
     padding-bottom: 50px;
-    padding-left: 20px;
-    text-align: justify;
     color: #f8f8f8;
     background-image:url('/images/bck_abt.jpg');
     background-size: cover;
@@ -89,12 +86,30 @@ blockquote {
   margin-top: 40px;
   padding-top: 100px;
   padding-bottom: 50px;
-  padding-left: 20px;
   text-align: justify;
   background-image:url('/images/bck_abt.jpg');
   background-size: cover;
   height: 100vh;
   vertical-align: middle;
+}
+.image-wrap{
+  display: inline-block;
+  overflow: hidden;
+}
+.image-wrap img{
+  -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    vertical-align: middle;
+}
+.image-wrap img:hover{
+  transform:scale(1.5);
+   -ms-transform:scale(1.5); /* IE 9 */
+   -moz-transform:scale(1.5); /* Firefox */
+   -webkit-transform:scale(1.5); /* Safari and Chrome */
+   -o-transform:scale(1.5); /* Opera */
 }
 .contacts-section {
   margin-top: 40px;
@@ -111,9 +126,11 @@ blockquote {
   margin-top: 10px;
 }
 /* Extra small devices (phones, up to 480px) */
-@media all and (max-width: 1400px) {
-  .about-section
-  {
+@media all and (max-width: 1098px) {
+  .about-section{
+    height: inherit;
+  }
+  .project-section{
     height: inherit;
   }
 }
@@ -128,9 +145,6 @@ blockquote {
     vertical-align: middle;
     align-items: center;
   }
-  .about-section{
-    height: inherit;
-  }
   .btn-group-vertical
   {
     align-items: center;
@@ -138,15 +152,17 @@ blockquote {
   .intro-divider {
     width: 200px;
   }
-
+  .about-section{
+    height: inherit;
+  }
+  .project-section{
+    height: inherit;
+  }
 }
 
 @media all and (max-width: 500px) {
   .intro-message > h1 {
     font-size:  3em;
-  }
-  .about-section{
-    height: inherit;
   }
   .intro-message > h2 {
     font-size:  1em;
@@ -157,7 +173,9 @@ blockquote {
   .about-section{
     height: inherit;
   }
-
+  .project-section{
+    height: inherit;
+  }
 }
 @media all and (max-width: 370px) {
   .intro-message > h1 {
@@ -166,10 +184,13 @@ blockquote {
   .intro-message > h2 {
     font-size:  .8em;
   }
+  .intro-divider {
+    width: 150px;
+  }
   .about-section{
     height: inherit;
   }
-  .intro-divider {
-    width: 150px;
+  .project-section{
+    height: inherit;
   }
 }
