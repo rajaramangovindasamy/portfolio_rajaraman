@@ -44,10 +44,10 @@
           <div class="intro-message">
             <h1>{{ title }}</h1>
             <hr class="intro-divider">
-            <h2>I'm a Software Developer!</h2>
+            <h2>{{ position }}</h2>
             <ul class="list-inline btnmid">
               <li>
-                <a href="#about" class="btn btn-default btn-md topmen">KNOW ME</a>
+                <a href="#about" class="btn btn-default btn-md topmen">{{indexbut}}</a>
               </li>
               <!-- <li>
                 <a href="#projects" class="btn btn-default btn-lg topmen">Projects</a>
@@ -66,19 +66,18 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="bachelors">
-          <p><blockquote> How it Started! </blockquote> My passion for Computer Science started at a very young age when I was curious to know about how the computer works with immense processing power, the ability to recall anything in an instant and to perform complex tasks.</p>
-          <p><blockquote> Bachelor's degree in Computer Science <kbd>GPA-3.6/4</kbd><small class="text-success">DCE, Chennai, India, 2008-2012</small></blockquote>I saw the field of computer science at a different level, not as a machine, rather composed of entities such as operating systems, software, storage and much more.</p>
-          <p>I took a data mining and warehousing class which got me more interested towards data and to apply the concepts I learnt, I did a project to predict the possibility of heart disease in human.</p>
-          <p>After realizing the increasing demand for analysis of video data, I, along with two other members developed an ‘Automated Visual Surveillance System’ to predict the abnormal behavior of humans in certain situations (example) and we presented this work in the International Conference on Computational Techniques and Artificial Intelligence in Pattaya, Thailand in 2011.</p>
+          <p><blockquote> {{projhead1}} </blockquote>{{projhead1_content}}</p>
+          <p><blockquote>{{projhead2}}<kbd>{{projhead2_tag1}}</kbd><small class="text-success">{{projhead2_tag2}}</small></blockquote>{{projhead2_content1}}</p>
+          <p>{{projhead2_content2}}</p><p>{{projhead2_content3}}</p>
         </div>
       </div>
         <div class="col-lg-6">
           <div class ="masters">
-            <p><blockquote>Master's degree in Computer Science <kbd>GPA-3.5/4</kbd><small class="text-success">University of Texas at Arlington, USA, 2015-2017</small></blockquote> I have done an exhilarating four years of under graduation and I wanted to acquire in-depth knowledge in the startling computer science field.</p>
-            <p>In order to achieve my goal, I joined the computer science master's program at University of Texas at Arlington and successfully graduated in May 2017.</p>
-            <p>My area of interest was software development and database systems. I had the opportunity to learn in-depth software development practices, core data structure concepts, machine learning algorithms, dive deep into the database, emerging cloud technologies and much more. </p>
-            <p>I developed few android applications, web applications dealing with googleapis/ dropboxapis from scratch with best software engineering practices and Big-data projects with cloud computing frameworks such as Hadoop/ Apache</p>
-            <p><blockquote> Industrial Experience <kbd>3-YEARS</kbd><small class="text-success">Tata Consultancy Services, India       2014-2015</small><small class="text-success">Cognizant Technology Solutions, India        2012-2014</small></blockquote></p>
+            <p><blockquote>{{projhead3}}<kbd>{{projhead3_tag1}}</kbd><small class="text-success">{{projhead3_tag2}}</small></blockquote>{{projhead3_content1}}</p>
+            <p>{{projhead3_content2}}</p>
+            <p>{{projhead3_content3}}</p>
+            <p>{{projhead3_content4}}</p>
+            <p><blockquote> {{projhead4}} <kbd>{{projhead4_tag1}}</kbd><small class="text-success">{{projhead4_tag2}}</small><small class="text-success">{{projhead4_tag3}}</small></blockquote></p>
         </div>
       </div>
       </div>
@@ -97,7 +96,7 @@
       <div class="container">
         <div class="row">
           <div class="project-area">
-            
+
           </div>
         </div>
       </div>
