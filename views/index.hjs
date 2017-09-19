@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rajaraman Personal Blog</title>
+  <title>Rajaraman Govindasamy | Portfolio </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo|Bowlby+One|Pacifico|Josefin+Sans|Fredericka+the+Great|Acme" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo|Bree+Serif|Pacifico|Josefin+Sans|Fredericka+the+Great|Acme|Satisfy|Crushed" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+  <nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
     <div class="container topnav">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -20,7 +22,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="nav navbar-brand topnav" href="#"><span><img src="/images/brand.jpg"/></span>Rajaraman's</a>
+          <a class="nav navbar-brand topnav" href="#"><span><img src=""/></span>Rajaraman's</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
@@ -33,123 +35,230 @@
           <li>
             <a href="#contacts">Contact</a>
           </li>
+          <li>
+            <a href="/images/rajaraman_govindasamy.pdf" download="resume">Resume</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
   <div class="intro-header">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row vertical-center">
-        <div class="col-md-12">
-          <div class="intro-message">
-            <h1>{{ title }}</h1>
-            <hr class="intro-divider">
-            <h2>{{ position }}</h2>
-            <ul class="list-inline btnmid">
-              <li>
-                <a href="#about" class="btn btn-default btn-md topmen">{{indexbut}}</a>
-              </li>
-              <!-- <li>
-                <a href="#projects" class="btn btn-default btn-lg topmen">Projects</a>
-              </li>
-              <li>
-                <a href="#contacts" class="btn btn-default btn-lg topmen">Contact</a>
-              </li> -->
+        <div class = "col-md-12 intromsg">
+          <h1 class="text-info" data-hover="WELCOME TO MY PAGE" data-active=""><span>{{title}}</span></h1>
+          <hr class="intro-divider">
+          <h2>{{position}}</h2>
+          <ul class="list-inline btnmid">
+            <li>
+              <a href="#about" class="btn btn-default btn-md topmen">{{indexbut}}</a>
+            </li>
+            <ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <a name="about"></a>
-    <div class="about-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="bachelors">
-          <p><blockquote> {{projhead1}} </blockquote>{{projhead1_content}}</p>
-          <p><blockquote>{{projhead2}}<kbd>{{projhead2_tag1}}</kbd><small class="text-success">{{projhead2_tag2}}</small></blockquote>{{projhead2_content1}}</p>
-          <p>{{projhead2_content2}}</p><p>{{projhead2_content3}}</p>
+      <a name="about"></a>
+      <div class="container-fluid abtsec">
+        <div class="col-md-4 abt2">
+          <div id='work' class="text-center work">
+            <!-- <div id='work' class="text-center work" style="background-color:#671e75"> -->
+            <i class="fa fa-building" style="margin-top:10px" aria-hidden="true"></i>
+            <h3>Work Experience</h3>
+            <h4>3 years</h4>
+            <a type="button" onclick="showWork()" style="margin-bottom:10px;background-color:#671e75"class="btn btn-success">KNOW MORE</a>
+          </div>
+          <div id="proj1" style="display:none;cursor:pointer" onclick="showWork()">
+          <p class="eng text-center"><kbd>Work Experience</kbd></p>
+          <p> <kbd>3 years</kbd></p>
+          <p class="text-center font-weight-bold">{{projhead4_tag2}}</p>
+          <p class="text-justify">Re-designed client’s policy document portal to expedite insurance policy creation 25% faster than usual rate. Dramatically accelerated database performance from 67% to 80% by implementing PL/SQL stored procedures. Crafted testing plans to handle 150 basic test cases that drastically lessened 6% of project delivery time.</p>
+          <p class="text-center font-weight-bold">{{projhead4_tag3}}</p>
+          <p class="text-justify">Improved archive logs switching time 8% faster for 14 critical databases which decreased their fail over by 12%. Achieved committed 50% reduction in recovery time of core applications for the bank using disaster recovery. Recorded 99% compliance in bringing business active from production emergency with zero business loss. Assisted data center disaster recovery drills for continuous 33 hours and switched 26 applications in a day. </p>
+          </div>
         </div>
-      </div>
-        <div class="col-md-6">
-          <div class ="masters">
-            <p><blockquote>{{projhead3}}<kbd>{{projhead3_tag1}}</kbd><small class="text-success">{{projhead3_tag2}}</small></blockquote>{{projhead3_content1}}</p>
-            <p>{{projhead3_content2}}</p>
-            <p>{{projhead3_content3}}</p>
-            <p>{{projhead3_content4}}</p>
-            <p><blockquote> {{projhead4}} <kbd>{{projhead4_tag1}}</kbd><small class="text-success">{{projhead4_tag2}}</small><small class="text-success">{{projhead4_tag3}}</small></blockquote></p>
-        </div>
-      </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-        <ul class="list-inline">
-          <li>
-            <a href="#projects" class="btn btn-default btn-md topmen">MY PROJECTS</a>
-          </li>
-        </div>
-      </div>
-      </div>
-    </div>
-    <a name="projects"></a>
-    <div class="project-section">
-      <div class="container">
-        <div class="row">
-          <div class="project-area">
-            <div class="col-md-3">
-              <div class="image-wrap">
-              <img src="/images/bck5.jpg" alt="PROJ1" class="img-responsive">
+          <div class="col-md-4 abt2">
+            <div id="univ" class="text-center work" >
+              <!-- <div id="univ" class="text-center work" style="background-color:#00BF6F"> -->
+              <i class="fa fa-university"  style="margin-top:10px" aria-hidden="true"></i>
+              <h3>Master's in Computer Science</h3>
+              <h4>GPA 3.5/4</h4>
+              <a type="button" onclick="showMast()" style="margin-bottom:10px;background-color:#671e75" class="btn btn-success">KNOW MORE</a>
+            </div>
+            <div id="proj3" style="display:none;cursor:pointer" onclick="showMast()">
+            <p class="eng text-center"><kbd>{{projhead3}}</kbd></p>
+            <p><kbd>GPA 3.5/4</kbd></p>
+              <p class="text-justify">{{projhead3_content1}}</p>
+              <p class="text-justify">{{projhead3_content2}}</p>
+              <p class="text-justify">{{projhead3_content3}}</p>
             </div>
             </div>
-            <div class="col-md-3">
-              <div class="image-wrap">
-              <img src="/images/bck5.jpg" alt="PROJ2" class="img-responsive">
+            <div class="col-md-4 abt2">
+              <div id='bach' class="text-center work">
+                <!-- <div id='work' class="text-center work" style="background-color:#671e75"> -->
+                <i class="fa fa-university" style="margin-top:10px" aria-hidden="true"></i>
+                <h3>Bachelor's in Computer Science</h3>
+                <h4>GPA 3.6/4</h4>
+                <a type="button" onclick="showBach()" style="margin-bottom:10px;background-color:#671e75"class="btn btn-success">KNOW MORE</a>
             </div>
+              <div id="proj2" style="display:none;cursor:pointer " onclick="showBach()" >
+              <p class="eng text-center"><kbd>{{projhead2}}</kbd></p>
+              <p><kbd>GPA 3.6/4</kbd></p>
+                <p class="text-justify">{{projhead2_content1}}</p>
+                <p class="text-justify">{{projhead2_content2}}</p>
+                <p class="text-justify">{{projhead2_content3}}</p>
+              </div>
             </div>
-            <div class="col-md-3">
-              <div class="image-wrap">
-              <img src="/images/bck5.jpg" alt="PROJ3" class="img-responsive">
-            </div>
-            </div>
-            <div class="col-md-3">
-              <div class="image-wrap">
-              <img src="/images/bck5.jpg" alt="PROJ4" class="img-responsive">
+          </div>
+          <a name="projects"></a>
+          <div class="container-fluid project-section">
+            <div class="row">
+              <div class="projdiv work" style="color:#fff">
+                <h2>PROJECTS</h2>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/plag.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title" style="color:#3b5998">Plagiarism Detector</h4>
+                  <p class="card-text">A simple plagiarism detector takes the corpus of documents and outputs the set of documents from which the document was plagiarized from.</p>
+                  <a href="https://github.com/rajaramangovindasamy/CS5311Project/tree/master/Plagiarism_Detector_Algos-master" target="_blank" class="btn btn-primary">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/search.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title" style="color:#007953">Search Engine</h4>
+                  <p class="card-text">Search query returns top k documents by converting the search repository into vectors in 3D space using TF-IDF and cosine similarity.</p>
+                  <a href="https://github.com/rajaramangovindasamy/Natural-Language-Processing" target="_blank" class="btn btn-info">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/weather.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title" style="color:#ed1c24">Weather Data</h4>
+                  <p class="card-text">Big Data project to compute the average temperature of Texas state from 2006 to 2010 (7 GB of data) using Amazon Elastic Map/Reduce.</p>
+                  <a href="https://github.com/rajaramangovindasamy/maxTemperature-Hadoop" target="_blank" class="btn btn-danger">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/mav.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title" style="color:#f68b1e">Mav Bids</h4>
+                  <p class="card-text">An Android Online mobile auctioning system for student community of UT Arlington to buy, sell or bid items in real-time.</p>
+                  <a href="https://github.com/rajaramangovindasamy/MavBids" target="_blank" class="btn btn-warning">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/proxy.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title" style="color:#01a99c">Proxy Server</h4>
+                  <p class="card-text">A multithreaded web proxy server that acts as an intermediary for requests from clients seeking resources from other servers.</p>
+                  <a href="https://github.com/rajaramangovindasamy/CSE5344-Computer-Networks/tree/master/CSE5344_project1_1001165700" target="_blank" class="btn btn-proxy">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/neural.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title" style="color:#8cc63f">Neural Networks</h4>
+                  <p class="card-text">Machine learning project that predicts classification accuracy using Neural Network with the Back-Propagation algorithm.</p>
+                  <a href="https://github.com/rajaramangovindasamy/CSE6363-MachineLearning/tree/master/Neural%20Networks" target="_blank" class="btn btn-success">Code</a>
+                </div>
+              </div>
+              <div>
+                <i id="drop" class="fa fa-chevron-down fa-3x" style="cursor:pointer"onclick="myFunction()" aria-hidden="true"></i>
+
+                <!-- <button type="button" class="btn btn-warning btn-md" onclick="myFunction()">
+
+                </button> -->
+              <!-- <button id ="mid_but" class="btn btn-info btn-md"type="button" onclick="myFunction()">More Projects</button> -->
             </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <a name="contacts"></a>
-    <div class="contacts-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-                    <h2>Connect with me!</h2>
-                    <p>Feel free to connect with me over phone, e-mail or social network</p>
-                    <div class ="contact-pane">
-                        <a href="tel:682-307-1343">682-307-1343</a><br /><a href="mailto:g.rajaraman0391@gmail.com">g.rajaraman0391@gmail</a>
-                        </div>
-            <ul class="list-inline intro-social-buttons cont-space">
-
-              <li>
-                <a href="https://twitter.com/rajaramangovind" class="btn btn-default btn-sm" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-              </li>
-
-              <!--<li>
-              <a href="https://github.com/rajaramangovindasamy/" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-            </li>-->
-            <li>
-              <a href="https://www.linkedin.com/in/rajaramang/" class="btn btn-default btn-sm" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-            </li>
-            <li>
-              <a href="https://plus.google.com/+RajaramanGovindasamy" class="btn btn-default btn-sm" target="_blank"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-            </li>
-          </ul>
-
-      </div>
-    </div>
-  </div>
-</div>
-</body>
-</html>
+          <a name="projects_hidden"></a>
+          <div class="container-fluid project-section1">
+            <div id= "myDIV" class="row" style="display:none">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/trnsxn a90168.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title" style="color:#a90168">Transaction Manager</h4>
+                  <p class="card-text">A transaction manager uses the strict 2PL mechanism that avoids deadlock by aborting the transactions involving deadlocks</p>
+                  <a href="https://github.com/rajaramangovindasamy/Transaction-Manager-DBMS" target="_blank" class="btn btn-trans">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/search.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title" style="color:#007953">Web MashUp</h4>
+                  <p class="card-text">A Web mash-up of Google Maps and the Geoname APIs, using javascript and AJAX to display the weather and postal address</p>
+                  <a href="https://github.com/rajaramangovindasamy/WebMashUp" target="_blank" class="btn btn-info">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/weather.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title" style="color:#ed1c24">Online Book Store</h4>
+                  <p class="card-text">An e-commerce web application for customers to cart, checkout and buy books saved in the database using PHP and MySQL</p>
+                  <a href="#" class="btn btn-danger">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/mav.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title" style="color:#f68b1e">Shortest Path Scala</h4>
+                  <p class="card-text">A Big-data project to find the connected components and size of an undirected graph of any size using Apache Spark and Scala</p>
+                  <a href="#" target="_blank" class="btn btn-warning">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/photo 0187a9.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title" style="color:#0187a9">Photo-Album</h4>
+                  <p class="card-text">A Web Photo-Album application using cloud storage and Dropbox API to upload, delete, and browse photographs in real-time.</p>
+                  <a href="#" target="_blank" class="btn btn-proxy">Code</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/images/file f1300e.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title" style="color:#f1300e">P2P FileSharing</h4>
+                  <p class="card-text">An Android application that shares files to the wireless P2P network clients and also acts as a centralized tracker server.</p>
+                  <a href="#" target="_blank" class="btn btn-file">Code</a>
+                </div>
+              </div>
+              <div>
+                <i id="up" class="fa fa-chevron-up fa-3x" style="cursor:pointer"onclick="myFunction()" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <a name="contacts"></a>
+          <div class="container-fluid contacts-section" style="background-color:#f7f8fa">
+            <div class="row">
+              <div class="col-md-4 work">
+                <h2>Connect with me!</h2>
+                <p>Feel free to connect with me over phone, e-mail or social network</p>
+                <div class ="contact-pane">
+                  <a href="tel:682-307-1343">682-307-1343</a><br /><a href="mailto:g.rajaraman0391@gmail.com">g.rajaraman0391@gmail</a>
+                </div>
+                <footer class="footer cont-space">
+                  <a href="https://www.facebook.com/grajaraman" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/rajaramangovind" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.linkedin.com/in/rajaramang/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a href="https://github.com/rajaramangovindasamy/" target="_blank"><i class="fa fa-github"></i></a>
+                  <a href="https://plus.google.com/+RajaramanGovindasamy" target="_blank"><i class="fa fa-google-plus"></i></a>
+                </footer>
+              </div>
+              <div class="col-md-8 doc work">
+                <h2>Resume</h2>
+                <div class="pdfdoc">
+                <object src="/images/rajaraman_govindasamy.pdf?zoom=50" ><embed src="/images/rajaraman_govindasamy.pdf?zoom=50"></embed></object>
+              </div>
+                <a type="button" class="btn btn-success" href="/images/rajaraman_govindasamy.pdf" download="resume">Download</a>
+              </div>
+            </div>
+          </div>
+            <div class="container-fluid foot">
+            <p class="text-muted">&copy; 2017 Copyrights: Rajaraman Govindasamy</p>
+          </div>
+          <script type="text/javascript" src="/javascripts/app.js"></script>
+        </body>
+        </html>
